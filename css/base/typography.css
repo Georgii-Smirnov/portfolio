@@ -1,0 +1,29 @@
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.section__title {
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.section__subtitle {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  }
+}

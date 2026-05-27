@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Георгий Ливебман — веб-разработчик. Разработка сайтов на WordPress, Tilda, чистая вёрстка.">
+  <title>Георгий Ливебман — Веб-разработчик</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>[data-animate]{opacity:0}</style>
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/blocks/header.css">
+  <link rel="stylesheet" href="css/blocks/hero.css">
+  <link rel="stylesheet" href="css/blocks/skills.css">
+  <link rel="stylesheet" href="css/blocks/portfolio.css">
+  <link rel="stylesheet" href="css/blocks/reviews.css">
+  <link rel="stylesheet" href="css/blocks/about.css">
+  <link rel="stylesheet" href="css/blocks/faq.css">
+  <link rel="stylesheet" href="css/blocks/contact.css">
+  <link rel="stylesheet" href="css/blocks/footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="Georgy Lieberman">GL</a>
+
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#hero" class="header__nav-link" data-i18n="navHome">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#skills" class="header__nav-link" data-i18n="navSkills">Услуги</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#portfolio" class="header__nav-link" data-i18n="navPortfolio">Портфолио</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#reviews" class="header__nav-link" data-i18n="navReviews">Отзывы</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link" data-i18n="navAbout">Обо мне</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#faq" class="header__nav-link" data-i18n="navFaq">FAQ</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact" class="header__nav-link" data-i18n="navContact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <select class="header__lang-select">
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+        </select>
+        <label class="header__theme-toggle" aria-label="Toggle theme">
+          <input type="checkbox" class="header__theme-input" role="switch">
+          <span class="header__theme-slider"></span>
+        </label>
+        <button class="header__burger" aria-label="Open menu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <section class="hero" id="hero">
+      <div class="hero__video" aria-hidden="true">
+        <video class="hero__video-media" src="images/hero-bg.mp4" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__meta">
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              <span data-i18n="heroBadge">Открыт к проектам</span>
+            </div>
+            <span class="hero__label" data-i18n="heroLabel">Веб-разработчик</span>
+          </div>
+          <h1 class="hero__title">
+            <span class="hero__title-line" data-i18n="heroHeadline">Разрабатываю сайты, которые приносят клиентов</span>
+          </h1>
+          <p class="hero__subtitle" data-i18n="heroSubtitle">От лендинга до кастомной платформы. Современный стек, чистый код, фикс-цена.</p>
+          <div class="hero__marquee" aria-hidden="true">
+            <div class="hero__marquee-track">
+              <span data-i18n="heroTag1">Лендинги</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag2">WordPress</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag3">Tilda</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag4">Магазины</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag5">Корпоративные</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag6">Автоматизация</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag1">Лендинги</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag2">WordPress</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag3">Tilda</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag4">Магазины</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag5">Корпоративные</span><span class="hero__marquee-dot">·</span>
+              <span data-i18n="heroTag6">Автоматизация</span>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a href="#contact" class="hero__cta" data-i18n="heroCta">Обсудить проект →</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-i18n="heroStat1Value">50+</span>
+              <span class="hero__stat-label" data-i18n="heroStat1Label">проектов</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-i18n="heroStat2Value">5 лет</span>
+              <span class="hero__stat-label" data-i18n="heroStat2Label">опыта</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-i18n="heroStat3Value">100%</span>
+              <span class="hero__stat-label" data-i18n="heroStat3Label">сроки</span>
+            </div>
+          </div>
+          <div class="hero__tech">
+            <span class="hero__tech-item">WordPress</span>
+            <span class="hero__tech-item">WooCommerce</span>
+            <span class="hero__tech-item">PHP</span>
+            <span class="hero__tech-item">JavaScript</span>
+            <span class="hero__tech-item">Tilda</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="skills__inner">
+        <header class="skills__header">
+          <span class="skills__label" data-i18n="skillsLabel">ЧТО ДЕЛАЮ</span>
+          <h2 class="skills__title section__title" id="skills-title" data-i18n="skillsTitle">От лендинга до доработок.</h2>
+          <p class="skills__subtitle section__subtitle" data-i18n="skillsSubtitle">Кастом любой сложности — от лендингов за 10k до магазинов и WordPress. Стек выбираю под задачу.</p>
+        </header>
+        <div class="skills__grid" id="skills-grid">
+          <aside class="skills__sidebar">
+            <button type="button" class="skills__sidebar-btn is-active" data-service="landing">
+              <span class="skills__sidebar-num">01</span>
+              <span class="skills__sidebar-name" data-i18n="skillsItem1Title">Лендинг</span>
+              <span class="skills__sidebar-price">от 10 000 ₽</span>
+            </button>
+            <button type="button" class="skills__sidebar-btn" data-service="shop">
+              <span class="skills__sidebar-num">02</span>
+              <span class="skills__sidebar-name" data-i18n="skillsItem2Title">Магазин</span>
+              <span class="skills__sidebar-price">от 60 000 ₽</span>
+            </button>
+            <button type="button" class="skills__sidebar-btn" data-service="wordpress">
+              <span class="skills__sidebar-num">03</span>
+              <span class="skills__sidebar-name" data-i18n="skillsItem3Title">WordPress</span>
+              <span class="skills__sidebar-price">от 15 000 ₽</span>
+            </button>
+            <button type="button" class="skills__sidebar-btn" data-service="tilda">
+              <span class="skills__sidebar-num">04</span>
+              <span class="skills__sidebar-name" data-i18n="skillsItem4Title">Tilda</span>
+              <span class="skills__sidebar-price">от 10 000 ₽</span>
+            </button>
+            <button type="button" class="skills__sidebar-btn" data-service="fixes">
+              <span class="skills__sidebar-num">05</span>
+              <span class="skills__sidebar-name" data-i18n="skillsItem5Title">Доработки</span>
+              <span class="skills__sidebar-price">от 1 500 ₽</span>
+            </button>
+          </aside>
+          <div class="skills__cards">
+            <article class="skills__card" data-service="landing">
+              <div class="skills__card-meta" data-i18n="skillsItem1Meta">10–50k • 2–7 дней</div>
+              <h3 class="skills__card-title" data-i18n="skillsItem1Title">Лендинг</h3>
+              <p class="skills__card-desc" data-i18n="skillsItem1Desc">Одностраничный сайт для бизнеса, товара или услуги. Адаптив, анимации, форма захвата.</p>
+              <ul class="skills__card-list">
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem1Point1">Адаптивная вёрстка по макетам Figma / PSD</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem1Point2">Кастомный дизайн + GSAP-анимации</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem1Point3">Форма заявки → Telegram</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem1Point4">Копирование сайта по образцу</span></li>
+              </ul>
+              <div class="skills__card-actions">
+                <a href="tel:+79991234567" class="skills__btn skills__btn--primary" data-i18n="skillsBtnCall">Позвонить</a>
+                <a href="https://t.me/egor" target="_blank" rel="noreferrer" class="skills__btn skills__btn--outline" data-i18n="skillsBtnTG">Написать в TG</a>
+              </div>
+            </article>
+            <article class="skills__card" data-service="shop">
+              <div class="skills__card-meta" data-i18n="skillsItem2Meta">60–150k • 15–45 дней</div>
+              <h3 class="skills__card-title" data-i18n="skillsItem2Title">Магазин</h3>
+              <p class="skills__card-desc" data-i18n="skillsItem2Desc">Интернет-магазин на WooCommerce с каталогом, корзиной и онлайн-оплатой.</p>
+              <ul class="skills__card-list">
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem2Point1">Настройка WooCommerce, плагинов и тем</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem2Point2">Каталог + фильтры + корзина</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem2Point3">Онлайн-оплата и рассчёт доставки</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem2Point4">Интеграция с Telegram и CRM</span></li>
+              </ul>
+              <div class="skills__card-actions">
+                <a href="tel:+79991234567" class="skills__btn skills__btn--primary" data-i18n="skillsBtnCall">Позвонить</a>
+                <a href="https://t.me/egor" target="_blank" rel="noreferrer" class="skills__btn skills__btn--outline" data-i18n="skillsBtnTG">Написать в TG</a>
+              </div>
+            </article>
+            <article class="skills__card" data-service="wordpress">
+              <div class="skills__card-meta" data-i18n="skillsItem3Meta">15–50k • 10–15 дней</div>
+              <h3 class="skills__card-title" data-i18n="skillsItem3Title">WordPress</h3>
+              <p class="skills__card-desc" data-i18n="skillsItem3Desc">Сайты на WordPress с кастомной функциональностью и ACF.</p>
+              <ul class="skills__card-list">
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem3Point1">Интеграция вёрстки с WordPress и ACF</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem3Point2">Создание и доработка сайтов на WordPress</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem3Point3">Кастомные типы записей и таксономии</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem3Point4">Производительность и SEO-оптимизация</span></li>
+              </ul>
+              <div class="skills__card-actions">
+                <a href="tel:+79991234567" class="skills__btn skills__btn--primary" data-i18n="skillsBtnCall">Позвонить</a>
+                <a href="https://t.me/egor" target="_blank" rel="noreferrer" class="skills__btn skills__btn--outline" data-i18n="skillsBtnTG">Написать в TG</a>
+              </div>
+            </article>
+            <article class="skills__card" data-service="tilda">
+              <div class="skills__card-meta" data-i18n="skillsItem4Meta">10–50k • 10–15 дней</div>
+              <h3 class="skills__card-title" data-i18n="skillsItem4Title">Tilda</h3>
+              <p class="skills__card-desc" data-i18n="skillsItem4Desc">Сборка и доработка сайтов на Tilda с нуля под ключ.</p>
+              <ul class="skills__card-list">
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem4Point1">Сборка сайта на Tilda с нуля</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem4Point2">Доработка существующего сайта на Tilda</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem4Point3">Перенос контента и оптимизация</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem4Point4">Подключение домена, метрик, форм</span></li>
+              </ul>
+              <div class="skills__card-actions">
+                <a href="tel:+79991234567" class="skills__btn skills__btn--primary" data-i18n="skillsBtnCall">Позвонить</a>
+                <a href="https://t.me/egor" target="_blank" rel="noreferrer" class="skills__btn skills__btn--outline" data-i18n="skillsBtnTG">Написать в TG</a>
+              </div>
+            </article>
+            <article class="skills__card" data-service="fixes">
+              <div class="skills__card-meta" data-i18n="skillsItem5Meta">1.5–50k • 1–7 дней</div>
+              <h3 class="skills__card-title" data-i18n="skillsItem5Title">Доработки</h3>
+              <p class="skills__card-desc" data-i18n="skillsItem5Desc">Правка багов, оптимизация, хостинг — привожу сайт в порядок.</p>
+              <ul class="skills__card-list">
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem5Point1">Правка багов и ошибок вёрстки</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem5Point2">Оптимизация скорости загрузки</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem5Point3">Установка на хостинг и настройка домена</span></li>
+                <li><span class="skills__card-arrow">→</span><span data-i18n="skillsItem5Point4">Перенос между хостингами и доменами</span></li>
+              </ul>
+              <div class="skills__card-actions">
+                <a href="tel:+79991234567" class="skills__btn skills__btn--primary" data-i18n="skillsBtnCall">Позвонить</a>
+                <a href="https://t.me/egor" target="_blank" rel="noreferrer" class="skills__btn skills__btn--outline" data-i18n="skillsBtnTG">Написать в TG</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="portfolio__inner">
+        <header class="portfolio__header">
+          <h2 class="portfolio__title section__title" id="portfolio-title" data-i18n="portfolioTitle">Портфолио</h2>
+          <p class="portfolio__subtitle section__subtitle" data-i18n="portfolioSubtitle">Примеры моих работ.</p>
+        </header>
+        <div class="portfolio__grid">
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-1.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard1Tag">WordPress</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard1Title">Интернет-магазин мебели</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard1Desc">WooCommerce, ACF, кастомная тема, фильтры, корзина</p>
+            </div>
+          </article>
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-2.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard2Tag">Tilda</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard2Title">Лендинг для агентства</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard2Desc">Анимации, форма с отправкой в CRM, адаптив</p>
+            </div>
+          </article>
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-3.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard3Tag">HTML / CSS / JS</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard3Title">Корпоративный сайт</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard3Desc">Чистая вёрстка, BEM, тёмная тема, двухязычность</p>
+            </div>
+          </article>
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-4.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard4Tag">WordPress</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard4Title">Блог о технологиях</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard4Desc">Кастомный WP-шаблон, рубрики, оптимизация скорости</p>
+            </div>
+          </article>
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-5.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard5Tag">Tilda</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard5Title">Сайт-портфолио дизайнера</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard5Desc">Zero Block, анимация, галерея работ</p>
+            </div>
+          </article>
+          <article class="portfolio__card" data-animate>
+            <img class="portfolio__card-image" src="images/projects/project-6.svg" alt="" width="600" height="375" loading="lazy">
+            <div class="portfolio__card-body">
+              <div class="portfolio__card-tags">
+                <span class="portfolio__card-tag" data-i18n="portfolioCard6Tag">HTML / CSS / JS</span>
+              </div>
+              <h3 class="portfolio__card-title" data-i18n="portfolioCard6Title">Сайт-визитка</h3>
+              <p class="portfolio__card-description" data-i18n="portfolioCard6Desc">Адаптив, переключатели темы и языка, GSAP</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews__inner">
+        <header class="reviews__header">
+          <h2 class="reviews__title section__title" id="reviews-title" data-i18n="reviewsTitle">Отзывы</h2>
+          <p class="reviews__subtitle section__subtitle" data-i18n="reviewsSubtitle">Что говорят клиенты о сотрудничестве.</p>
+        </header>
+        <div class="reviews__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews__card">
+              <p class="reviews__card-text" data-i18n="review1Text">Георгий помог исправить ошибки на сайте, которые до него никто не мог починить. Быстро, качественно, без воды. Рекомендую.</p>
+              <footer>
+                <cite class="reviews__card-author" data-i18n="review1Author">Алексей</cite>
+                <div class="reviews__card-role" data-i18n="review1Role">Владелец интернет-магазина</div>
+              </footer>
+            </div>
+            <div class="swiper-slide reviews__card">
+              <p class="reviews__card-text" data-i18n="review2Text">Сделал лендинг на Tilda за 3 дня. Всё работает, форма отправляется, счётчики стоят. Спасибо!</p>
+              <footer>
+                <cite class="reviews__card-author" data-i18n="review2Author">Мария</cite>
+                <div class="reviews__card-role" data-i18n="review2Role">Основатель бьюти-студии</div>
+              </footer>
+            </div>
+            <div class="swiper-slide reviews__card">
+              <p class="reviews__card-text" data-i18n="review3Text">Перенёс наш магазин с устаревшей CMS на WordPress + WooCommerce. Ни одной ошибки, все данные сохранены. Профессионал.</p>
+              <footer>
+                <cite class="reviews__card-author" data-i18n="review3Author">Дмитрий</cite>
+                <div class="reviews__card-role" data-i18n="review3Role">Директор мебельной компании</div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__controls">
+          <button class="reviews__btn reviews__btn--prev" aria-label="Previous">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="reviews__pagination"></div>
+          <button class="reviews__btn reviews__btn--next" aria-label="Next">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <img class="about__photo" src="images/photo.svg" alt="Георгий Ливебман" width="400" height="533" loading="lazy">
+        <div class="about__content" data-animate>
+          <h2 class="about__title section__title" id="about-title" data-i18n="aboutTitle">Обо мне</h2>
+          <div class="about__text">
+            <p data-i18n="aboutText1">Меня зовут Георгий Ливебман. Я веб-разработчик с опытом работы над проектами разного масштаба — от простых лендингов до кастомных решений на WordPress и WooCommerce.</p>
+            <p data-i18n="aboutText2">Не пользуюсь конструкторами там, где нужен чистый код. Люблю семантику, порядок в файлах и предсказуемый результат. С каждым проектом работаю лично — без менеджеров и команд.</p>
+          </div>
+          <div class="about__stats">
+            <div class="about__stat">
+              <div class="about__stat-value" data-i18n="aboutStat1Value">50+</div>
+              <div class="about__stat-label" data-i18n="aboutStat1Label">Проектов</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-value" data-i18n="aboutStat2Value">5 лет</div>
+              <div class="about__stat-label" data-i18n="aboutStat2Label">В разработке</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-value" data-i18n="aboutStat3Value">100%</div>
+              <div class="about__stat-label" data-i18n="aboutStat3Label">Сроки соблюдены</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq__inner">
+        <header class="faq__header">
+          <h2 class="faq__title section__title" id="faq-title" data-i18n="faqTitle">Частые вопросы</h2>
+        </header>
+        <div class="faq__list">
+          <div class="faq__item faq__item--open">
+            <button class="faq__question" aria-expanded="true">
+              <span data-i18n="faqQ1">Сколько стоят ваши услуги?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner" data-i18n="faqA1">Всё зависит от задачи. Лендинг — от 15 000 ₽, доработка сайта — от 5 000 ₽, сайт на WordPress — от 30 000 ₽. Точную цену называю после брифа.</div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faqQ2">Сколько времени занимает разработка?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner" data-i18n="faqA2">Лендинг — 3–7 дней. WordPress-сайт — 7–14 дней. Доработки — 1–3 дня. Срочные проекты обсуждаются отдельно.</div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faqQ3">Работаете с физическими лицами?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner" data-i18n="faqA3">Да, работаю как с физлицами, так и с юрлицами. Оплата — наличные, перевод на карту или безналичный расчёт.</div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faqQ4">Нужны ли предоплаты?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner" data-i18n="faqA4">Предоплата 50% при старте, остальное — после сдачи. На небольших доработках возможна полная оплата после работы.</div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faqQ5">Предоставляете поддержку после сдачи?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner" data-i18n="faqA5">Да, месяц базовой поддержки бесплатно. Правки, консультации и помощь с хостингом. Далее — по договорённости.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <header class="contact__header">
+          <h2 class="contact__title section__title" id="contact-title" data-i18n="contactTitle">Связаться</h2>
+          <p class="contact__subtitle section__subtitle" data-i18n="contactSubtitle">Оставьте заявку — я отвечу в течение нескольких часов.</p>
+        </header>
+        <form class="contact__form" action="#" method="POST">
+          <div class="contact__form-group">
+            <label class="contact__label" for="name" data-i18n="contactNameLabel">Имя</label>
+            <input class="contact__input" type="text" id="name" name="name" data-i18n-placeholder="contactNamePlaceholder" placeholder="Как к вам обращаться?" required>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label" for="contact" data-i18n="contactContactLabel">Контакт</label>
+            <input class="contact__input" type="text" id="contact" name="contact" data-i18n-placeholder="contactContactPlaceholder" placeholder="Telegram / Email / Телефон" required>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label" for="message" data-i18n="contactMessageLabel">Задача</label>
+            <textarea class="contact__textarea" id="message" name="message" data-i18n-placeholder="contactMessagePlaceholder" placeholder="Опишите, что нужно сделать..." required></textarea>
+          </div>
+          <button class="contact__button" type="submit" data-i18n="contactButton">Отправить</button>
+        </form>
+        <div class="contact__info">
+          <a class="contact__link" href="mailto:hello@glieberman.ru" data-i18n="contactEmail">hello@glieberman.ru</a>
+          <a class="contact__link" href="https://t.me/glieberman" target="_blank" rel="noopener noreferrer" data-i18n="contactTelegram">@glieberman</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a class="footer__link" href="mailto:hello@glieberman.ru">Email</a>
+        <a class="footer__link" href="https://t.me/glieberman" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+      <small class="footer__copyright">&copy; 2026 Georgy Lieberman</small>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/blocks/header.js"></script>
+  <script src="js/blocks/hero.js"></script>
+  <script src="js/blocks/portfolio.js"></script>
+  <script src="js/blocks/faq.js"></script>
+  <script src="js/blocks/contact.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.reviews__swiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      breakpoints: {
+        769: { slidesPerView: 2 }
+      },
+      navigation: {
+        nextEl: '.reviews__btn--next',
+        prevEl: '.reviews__btn--prev'
+      },
+      pagination: {
+        el: '.reviews__pagination',
+        clickable: true
+      }
+    });
+  </script>
+
+  <script type="module">
+    const grid = document.getElementById('skills-grid');
+    if (!grid) throw new Error('skills-grid not found');
+
+    const sidebar = grid.querySelector('.skills__sidebar');
+    const buttons = sidebar.querySelectorAll('.skills__sidebar-btn');
+    const cards = grid.querySelectorAll('.skills__card');
+
+    /* fade-in on scroll */
+    const appearObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          appearObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach((card) => appearObserver.observe(card));
+
+    /* scroll-spy: highlight sidebar button + dim non-active cards */
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.dataset.service;
+          buttons.forEach((btn) => {
+            btn.classList.toggle('is-active', btn.dataset.service === id);
+          });
+          cards.forEach((card) => {
+            card.classList.toggle('is-dimmed', card.dataset.service !== id);
+          });
+        }
+      });
+    }, {
+      threshold: 0,
+      rootMargin: '-40% 0px -40% 0px',
+    });
+
+    cards.forEach((card) => spyObserver.observe(card));
+
+    /* click sidebar → scroll to card */
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.service;
+        const target = grid.querySelector(`.skills__card[data-service="${id}"]`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'blocks/header.css';
+@import 'blocks/hero.css';
+@import 'blocks/skills.css';
+@import 'blocks/portfolio.css';
+@import 'blocks/reviews.css';
+@import 'blocks/about.css';
+@import 'blocks/faq.css';
+@import 'blocks/contact.css';
+@import 'blocks/footer.css';
